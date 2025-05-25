@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Обработчик текста</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Обработчик текста</h1>
+
+            <div class="input-group">
+                <label for="inputText">Введите текст:</label>
+                <textarea id="inputText" rows="5"></textarea>
+            </div>
+
+            <div class="button-group">
+                <button id="removeSpaces">Удалить пробелы и переносы</button>
+                <button id="capitalize">Заглавные буквы</button>
+                <button id="swapLetters">Поменять буквы местами</button>
+                <button id="sortWords">Сортировать слова</button>
+                <button id="saveToFile">Сохранить в файл</button>
+            </div>
+
+            <div class="date-group">
+                <label for="dateInput">Введите дату (дд.мм.гггг):</label>
+                <input type="text" id="dateInput" placeholder="дд.мм.гггг" />
+                <button id="processDate">Обработать дату</button>
+            </div>
+
+            <div class="folder-group">
+                <button id="selectFolder">Выбрать папку</button>
+                <button id="organizeFiles">Организовать файлы</button>
+                <button id="cleanFolder">Очистить папку</button>
+            </div>
+
+            <div class="output-group">
+                <label for="outputText">Результат:</label>
+                <textarea id="outputText" rows="5" readonly></textarea>
+            </div>
+
+            <div id="status"></div>
+        </div>
+
+        <script src="renderer.js"></script>
+    </body>
+</html>
